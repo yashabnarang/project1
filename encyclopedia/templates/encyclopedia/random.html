@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ randomEntry }}: Encyclopedia
+{% endblock %}
+
+{% block body %}
+    {% if entryContent %}
+      {{ entryContent |safe}}
+      <br><br><a href="{% url 'edit' randomEntry %}">Edit Page</a>
+    {% else %}
+      <h2><b>Error 404: Not Found</b></h2><br>
+      Would you like to <a href="{% url 'create' %}">Create New Page</a>?
+
+    {% endif %}
+
+{% endblock %}
