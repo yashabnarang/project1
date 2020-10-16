@@ -2,12 +2,9 @@
  
 ## Objectives
 
-* Django/Markdown/HTML Wikipedia-like Application
+* Build a Django/Markdown/HTML Wikipedia-like Application
 
 ## Specification
-
-The website meets the following requirements:
-
 * **Entry Page.** Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, should render a page that displays the contents of that encyclopedia entry.
 * **Index Page.** Update index.html such that, instead of merely listing the names of all pages in the encyclopedia, user can click on any entry name to be taken directly to that entry page.
 * **Search.** Allow the user to type a query into the search box in the sidebar to search for an encyclopedia entry.
